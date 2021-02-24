@@ -9,13 +9,14 @@
 <body>
 
   <?php
+    $badWord = $_GET["parola"];
     $paragrafo = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit';
-    $_GET["badWord"];
     $paragrafo2 = str_replace($badWord, '***', $paragrafo);
   ?>
 
   <p><?php echo 'Uncensored paragraph: ' . $paragrafo ?>; </p>
-  <p><?php echo 'Censored paragraph' . $paragrafo2 ?>; </p>
+  <p><?php echo 'Lunghezza: ' . strlen($paragrafo) ?>;</p>
+  <p><?php echo 'Censored paragraph: ' . $paragrafo2 ?>; </p>
 
 </body>
 </html>
